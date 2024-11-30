@@ -1,0 +1,501 @@
+<!-- index.html file containing the code for login page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phone Genie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="webFunctions.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid text-bg-dark p-4 text-center">
+        <h2>Phone Genie</h2>
+        <p>The online mobile shop</p>
+    </header>
+
+    <main class="container">
+        <br><br>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        <br>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8">
+                                <img src="/images/logo.png" alt="Avatar Logo" class="rounded-circle img-fluid">
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <br><br>
+                        <form action="/homepage" method="post">
+                            <div class="row p-3">
+                                <div class="col-md-2">
+                                    <label for="uname" class="form-label">Username:</label>
+                                </div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control" name="uname" id="uname">
+                                </div>
+                            </div>
+
+                            <div class="row p-3">
+                                <div class="col-md-2">
+                                    <label for="pwd" class="form-label">Password:</label>
+                                </div>
+                                <div class="col-md">
+                                    <input type="password" class="form-control" name="pwd" id="pwd">
+                                </div>
+                            </div>
+
+                            <div class="row p-3">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                    <br>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                            <div id="errormsg" class="text-center text-warning"></div>
+                            <br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <br><br>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Mobile Genie</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- home.html file containing homepage code -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phone Genie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="webFunctions.js"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark" id="navbar">
+        <script>NavigationBar();</script>
+    </nav>
+
+    <header class="container-fluid text-bg-dark p-4" id="headerElement">
+        <script>DefaultHeader();</script>
+    </header>
+
+    <main class="container">
+        <br>
+
+        <div class="container">
+            <div id="news" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="1" class="active"></button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/images/slide1.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="/images/slide2.jpg" alt="slide 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/slide3.jpg" alt="slide 3" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#news" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#news" data-bs-slide="next">
+                    <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <br>
+
+        <h2>About us</h2>
+        <hr>
+        <p>We are a mobile store functioning in East Malvern, Victoria, Austraila. We offer all brands of new and used
+            phones. Quality is our first priority so you can buy our products without fear. Still hesitant to trust us?
+            We got it covered. We offer 1 year waranty for all the phones purchased from us.</p>
+        <p> In addition to sales, we also service all brands of phones.</p>
+
+        <h2>Top Brands</h2>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark" id="appleid" value="Apple"
+                    onclick="">Apple</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark" id="samsung">Samsung</button></div>
+            <div class="col-sm-3 brand"><button type="button" class="btn btn-dark" id="oneplus">OnePlus</button>
+            </div>
+            <div class="col-sm-3 brand"><button type="button" class="btn btn-dark">Google</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Oppo</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Vivo</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Xiaomi</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Motorola</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Realme</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Asus</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Sony</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Nokia</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Huawei</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Honor</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Infinix</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">TCL</button></div>
+        </div>
+
+
+
+        <br>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Mobile Genie</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!-- checkout.html containing code for the checkout page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phone Genie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="webFunctions.js"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark" id="navbar">
+        <script>NavigationBar();</script>
+    </nav>
+
+    <header class="container-fluid text-bg-dark p-4" id="headerElement">
+        <script>DefaultHeader();</script>
+    </header>
+
+    <main class="container">
+        <br>
+
+        <div class="container">
+            <div id="news" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="1" class="active"></button>
+                    <button type="button" data-bs-target="#news" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="/images/slide1.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="/images/slide2.jpg" alt="slide 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/slide3.jpg" alt="slide 3" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#news" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#news" data-bs-slide="next">
+                    <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <br>
+
+        <h2>About us</h2>
+        <hr>
+        <p>We are a mobile store functioning in East Malvern, Victoria, Austraila. We offer all brands of new and used
+            phones. Quality is our first priority so you can buy our products without fear. Still hesitant to trust us?
+            We got it covered. We offer 1 year waranty for all the phones purchased from us.</p>
+        <p> In addition to sales, we also service all brands of phones.</p>
+
+        <h2>Top Brands</h2>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark" id="appleid" value="Apple"
+                    onclick="">Apple</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark" id="samsung">Samsung</button></div>
+            <div class="col-sm-3 brand"><button type="button" class="btn btn-dark" id="oneplus">OnePlus</button>
+            </div>
+            <div class="col-sm-3 brand"><button type="button" class="btn btn-dark">Google</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Oppo</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Vivo</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Xiaomi</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Motorola</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Realme</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Asus</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Sony</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Nokia</button></div>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Huawei</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Honor</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">Infinix</button></div>
+            <div class="col-sm-3"><button type="button" class="btn btn-dark">TCL</button></div>
+        </div>
+
+
+
+        <br>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Mobile Genie</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- webFunctions.js containing javascript code -->
+
+function NavigationBar ()
+{
+    let outputHTML = `<div class="container-fluid">
+                            <button class="btn btn-dark m-1 float-start"
+                                onclick="window.location.href='http://localhost:3000/home.html';" type="button">Home</button>
+                            <button class="btn btn-dark m-1 float-end"
+                             onclick="window.location.href='http://localhost:3000/login.html';" type="button">Log Out</button>
+                        </div>`
+
+    document.getElementById("navbar").innerHTML = outputHTML;
+}
+
+function DefaultHeader ()
+{
+    outputHTML = `<form method="post" action="/search"><div class="row">
+                    <div class="col-sm-1 col-12">
+                        <img src="/images/logo.png" alt="Avatar Logo" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-2">
+                        <h2>Phone Genie</h2>
+                        <p>The online mobile shop</p>
+                    </div>
+                    
+                    <div class="col-md-5 pt-4">
+                        <input type="text" class="form-control" name="keyword" id="keyword" placeholder="What do you have in mind?">
+                            
+                        
+                    </div>
+                    <div class="col-md-2 pt-4">
+                                <button type="submit" class="btn btn-light">Search</button>
+                    </div>
+                    <div class="col-md-2 pt-4">
+                        <form name="services" id="services">
+                            <select class="form-select" id="servicesdropdown" onchange="ServicesSelection()">
+                                <option disabled selected>Services</option>
+                                <option value="all">All Phones</option>
+                                <option value="new">New Phones</option>
+                                <option value="used">Used Phones</option>
+                                <option value="service">Service your phone</option>
+                            </select>
+                        </form>
+                    </div>
+                </div></form>`
+
+    document.getElementById("headerElement").innerHTML = outputHTML;
+}
+
+function CheckoutValidation()
+{
+    const _fname = document.getElementById("fname").value;
+    const _lname = document.getElementById("lname").value;
+    const _email = document.getElementById("user_email").value;
+    const _cCode = document.getElementById("c_code").value;
+    const _phoneNum = document.getElementById("phone_num").value;
+    const _street = document.getElementById("street").value;
+    const _city = document.getElementById("city").value;
+    const _country = document.getElementById("country").value;
+    const _suburb = document.getElementById("suburb").value;
+    const _state = document.getElementById("state").value;
+    const _pCode = document.getElementById("p_code").value;
+    const _cnum = document.getElementById("cnum").value;
+    const _cvv = document.getElementById("cvv").value;
+    const _exp = document.getElementById("exp").value;
+
+    const _namemsg = document.getElementById("namemsg");
+    const _emailmsg = document.getElementById("emailmsg");
+    const _phonemsg = document.getElementById("phonemsg");
+    const _addmsg = document.getElementById("addmsg");
+    const _crdmsg = document.getElementById("crdmsg");
+
+    let cname, cemail, cphone, cadd, ccrd;
+
+
+    if (_fname.length == 0 || _lname.length == 0)
+    {
+        _namemsg.innerHTML = "<em>Name cannot be empty</em>";
+        _namemsg.classList.add("text-danger");
+        cname = false;
+    }
+    else
+    {
+        _namemsg.innerHTML = "<em>Valid</em>";
+        _namemsg.classList.add("text-success");
+        cname = true;
+
+    }
+
+    if (_email.length == 0)
+    {
+        _emailmsg.innerHTML = "<em>Email cannot be empty</em>";
+        _emailmsg.classList.add("text-danger");
+        cemail = false;
+    }
+    else
+    {
+        _emailmsg.innerHTML = "<em>Valid</em>";
+        _emailmsg.classList.add("text-success");
+        cemail = true;
+
+    }
+
+    if (_cCode.length != 2 || _phoneNum.length != 10)
+    {
+        _phonemsg.innerHTML = "<em>Please enter a valid 10 digit phone number with 2 dight country code.</em>";
+        _phonemsg.classList.add("text-danger");
+        cphone = false;
+    }
+    else
+    {
+        _phonemsg.innerHTML = "<em>Valid</em>";
+        _phonemsg.classList.add("text-success");
+        cphone = true;
+    }
+
+    if (_street.length == 0 || _city.length == 0 || _country.length == 0 || _suburb.length == 0 || _state.length == 0 || _pCode.length == 0)
+    {
+        _addmsg.innerHTML = "<em>You cannot leave any of the address feilds empty!</em>";
+        _addmsg.classList.add("text-danger");
+        cadd = false;
+    }
+    else
+    {
+        _addmsg.innerHTML = "<em>Valid</em>";
+        _addmsg.classList.add("text-success");
+        cadd = true;
+    }
+
+    if (_cnum.length != 16 || _cvv.length != 3)
+    {
+        _crdmsg.innerHTML = "<em>Card number should be 16 digits long, cvv should be 3 digits long and date should not be empty</em>";
+        _crdmsg.classList.add("text-danger");
+        ccrd = false;
+    }
+    else
+    {
+        _crdmsg.innerHTML = "<em>Valid</em>";
+        _crdmsg.classList.add("text-success");
+        ccrd = true;
+    }
+
+
+    if (cname && cemail && cphone && cadd && ccrd)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+
+}
+
+
