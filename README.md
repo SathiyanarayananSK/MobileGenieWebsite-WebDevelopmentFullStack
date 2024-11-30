@@ -1,6 +1,6 @@
 # 🛒 eCommerce Website
 
-Welcome to **Mobile Genie** an eCommerce mobil phone Website, a seamless platform for browsing and purchasing mobile phones. This project is a showcase of modern web development practices, featuring **user authentication**, **product search**, **shopping cart** management, and **order checkout** functionality.
+Welcome to **Mobile Genie** an eCommerce mobile phone Website, a seamless platform for browsing and purchasing mobile phones. This project is a showcase of modern web development practices, featuring **user authentication**, **product search**, **shopping cart** management, and **order checkout** functionality.
 
 ---
 
@@ -45,20 +45,20 @@ Review the order details before submitting the form. Once confirmed, orders are 
 
 Here are some visuals of the website:
 
-![Login Page](images/display1.png)
+![Login Page](public/images/display1.png)
 
-![Homepage](images/display2.png)
+![Homepage](public/images/display2.png)
 
-![Product Search](images/display3.png)
+![Product Search](public/images/display3.png)
 
-![Checkout Page](images/display4.png)
+![Checkout Page](public/images/display4.png)
 
-![Submission page](images/display5.png)
+![Submission page](public/images/display5.png)
 
 
 ## Demo Video
 
-Click belo to see how the website works
+Click below to see how the website works
 
 [![Watch the video](https://img.youtube.com/vi/qfbdQAv5Cv0/0.jpg)](https://www.youtube.com/watch?v=qfbdQAv5Cv0)
 
